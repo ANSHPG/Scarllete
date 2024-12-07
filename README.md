@@ -1,5 +1,5 @@
-# Scarlette  
-
+# Scarllete
+![logo_center_aligned](https://github.com/user-attachments/assets/e88c15ed-914c-454c-97cc-b993aa8d0d5f)
 Scarlette is a lightweight backend framework built with FastAPI, designed to integrate seamlessly with Dialogflow for handling user intents and dynamically triggering database procedures. This project focuses on managing and tracking expenses efficiently and provides an extendable base for conversational AI applications.  
 
 ## Features  
@@ -9,6 +9,14 @@ Scarlette is a lightweight backend framework built with FastAPI, designed to int
 - Modular structure, making it easy to extend or adapt to different use cases.  
 
 ## Tools and Technologies  
+
+<p align="left">
+  <img src="https://github.com/user-attachments/assets/06057cda-1c8f-408a-9af1-2db1cd855c56" width="200" style="margin-right: 20px;"alt="Image 1">
+  <img src="https://github.com/user-attachments/assets/b9a5d047-0dc7-400c-bb9a-dfd3c8c0ee55" width="200" alt="Image 2">
+  <img src="https://github.com/user-attachments/assets/a6395ce2-0f24-4078-8227-e2f277ad28eb" width="200" height="56" alt="Image 3">
+  <img src="https://github.com/user-attachments/assets/cfdd9378-bc15-47e2-b810-9cf004ab1df7" width="200" height="56" alt="Image 4">
+</p>
+
 - **FastAPI**: A modern, high-performance web framework for building APIs.  
 - **Uvicorn**: An ASGI server to run the FastAPI backend.  
 - **Dialogflow**: Google’s conversational AI platform for recognizing user intents.  
