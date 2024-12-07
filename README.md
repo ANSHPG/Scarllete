@@ -71,4 +71,3 @@ If you’d like to contribute to Scarlette, feel free to fork the repository and
 You are free to use this repository for personal projects. However, for commercial or public-facing applications, please contact me for approval.  
 
 If you encounter any problems or have questions, don’t hesitate to reach out. Suggestions and feedback are always appreciated!  
-```
