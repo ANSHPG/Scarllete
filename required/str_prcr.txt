@@ -1,0 +1,31 @@
+DELIMITER //
+
+CREATE PROCEDURE insert_expense_and_update_category(
+    IN in_category_id INT,
+    IN in_expense_amount DECIMAL(20, 2),
+    IN in_user_id INT
+)
+BEGIN
+    DECLARE category_exists INT;
+
+    -- Check if the category exists
+    SELECT COUNT(*) INTO category_exists
+    FROM category
+    WHERE category_id = in_category_id;
+
+    IF category_exists = 0 THEN
+        SIGNAL SQLSTATE '45000'
+        SET MESSAGE_TEXT = 'Category not found';
+    END IF;
+
+    -- Update the total amount in the category table
+    UPDATE category
+    SET amount = amount + in_expense_amount
+    WHERE category_id = in_category_id;
+
+    -- Insert the expense record
+    INSERT INTO expense (user_id, category_ids, amount, expense_date)
+    VALUES (in_user_id, JSON_ARRAY(in_category_id), in_expense_amount, NOW());
+END //
+
+DELIMITER ;
